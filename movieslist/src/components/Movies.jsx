@@ -8,6 +8,7 @@ const Movies = () => {
     const [search, setSearch]=useState(" ")
     return (
        <Grid container>
+           {{/* Search Bar */}}
             <InputBase
             style={{width:"80%"}}
         sx={{ ml: 1, flex: 1 }}
@@ -18,7 +19,9 @@ const Movies = () => {
       <IconButton type="submit" sx={{ p: '10px' }} aria-label="search" >
         <Search />
       </IconButton>
+              {/* Movie cards */}
            <ImageList sx={{ width: 500, height: 500 }} gap={8} cols={4}>
+               {/* filter method is used to filter a particular movie while searching */}
            {data.filter((val)=>{
                if(search == ""){
                    return val

@@ -49,6 +49,7 @@ const MovieSingle = ({match}) => {
             } />
               </ImageListItem>
               </Grid>
+              {/* to show the details of a movie */}
               <Grid className={styles.card} item sx={4}>
                   <Typography variant="h4">Title:{item.original_title}</Typography>
                   <Typography variant="h6">Overview:{item.overview}</Typography>
